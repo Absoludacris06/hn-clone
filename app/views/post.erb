@@ -1,0 +1,12 @@
+<div class="container">
+  <%= erb :_display_post %>
+  <%= erb :_comment_form %>
+
+  <% @comments.each do |comment| %>
+    <% @comment = comment %>
+    <% @user = User.find(@comment.user_id) %>
+    <%= erb :_display_comment %>
+  <% end %>
+
+
+</div>

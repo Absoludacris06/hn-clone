@@ -1,0 +1,12 @@
+<div class="container">
+  <% if @errors %>
+    <% @errors.each do |error| %>
+      <h5><%= error %></h5>
+    <% end %>
+  <% end %>
+  <form id="create_post" method="post" action="/new_post">
+    <input name="title" type="text" placeholder="Title">
+    <input name="url" type="url" placeholder="URL">
+    <input type="submit" value="Create Post">
+  </form>
+</div>

@@ -1,0 +1,7 @@
+<div id="user_data">
+  <div class="username">Name: <%= @user.name %></div>
+  <div class="email">Email: <%= @user.email %></div>
+  <div class="join_date">Joined: <%= @user.created_at %></div>
+  <a href="/user/<%= @user.id %>/posts">See User's Posts</a>
+  <a href="/user/<%= @user.id %>/comments">See User's Comments</a>
+</div>
